@@ -1,26 +1,153 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap");
+
+
+@theme {
+  /* Colors */
+  --color-black:      #0d0d0d;
+  --color-black-mid:  #161616;
+  --color-black-soft: #1e1e1e;
+  --color-black-card: #242424;
+  --color-ivory:      #f5f0e8;
+  --color-ivory-dim:  #c8bfa8;
+  --color-gold:       #c8a96e;
+  --color-gold-light: #dfc08a;
+  --color-gold-dim:   #8a6e3e;
+
+  /* Fonts */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body:    "DM Sans", system-ui, sans-serif;
+
+  /* Letter spacing */
+  --tracking-widest2: 0.2em;
+  --tracking-widest3: 0.3em;
+
+  /* Transitions */
+  --ease-luxury: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── Base styles ── */
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0d0d0d;
+  color: #f5f0e8;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.chess-bg {
+  background-image: repeating-conic-gradient(
+    rgba(255, 255, 255, 0.032) 0% 25%,
+    transparent 0% 50%
+  );
+  background-size: 48px 48px;
+}
+
+.chess-bg-sm {
+  background-image: repeating-conic-gradient(
+    rgba(255, 255, 255, 0.025) 0% 25%,
+    transparent 0% 50%
+  );
+  background-size: 28px 28px;
+}
+
+
+.gold-text {
+  background: linear-gradient(
+    135deg,
+    var(--color-gold) 0%,
+    var(--color-gold-light) 50%,
+    var(--color-gold) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.875rem 2rem;
+  transition: background-color 400ms cubic-bezier(0.25, 0.1, 0.25, 1),
+              transform 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-gold-light);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid rgba(200, 169, 110, 0.3);
+  color: var(--color-ivory);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 0.875rem 2rem;
+  transition: border-color 400ms cubic-bezier(0.25, 0.1, 0.25, 1),
+              color 400ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+/* ── Typography ── */
+.heading-display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+.heading-section {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.label-caps {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-ivory-dim);
+}
+
+/* ── Gold divider ── */
+.divider-gold {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-gold-dim),
+    transparent
+  );
 }
