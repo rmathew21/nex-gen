@@ -6,8 +6,8 @@ export default function Navbar() {
             <Link href="/" className="font-bold text-xl">My App</Link>
             <div className="flex gap-6">
                 <Link href='/about'>About</Link>
-                <Link href='/about'>Services</Link>
-                <Link href='/about'>Contact</Link>
+                <Link href='/services'>Services</Link>
+                <Link href='/contact'>Contact</Link>
             </div>
         </nav>
     )
