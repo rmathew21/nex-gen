@@ -75,7 +75,7 @@ export default function Home() {
             <p className="label-caps text-gold mb-4">What We Do</p>
             <h2 className="heading-section text-ivory">
               Solutions Built for
-              <span className="gold-text italic"> Stategic Growth</span>
+              <span className="gold-text italic"> Strategic Growth</span>
             </h2>
             <hr className="divider-gold w-24 mx-auto mt-6" />
           </div>
