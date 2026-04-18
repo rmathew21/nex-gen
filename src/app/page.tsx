@@ -24,14 +24,14 @@ export default function Home() {
                 </h1>
 
                 <p className="text-ivory-dim text-lg md:text-xl leading-relaxed max-w-xl mb-12">
-                  NexGen Proessional Solutions help forward-thinking businesses strategize, execute, and win - with precision at every step.
+                  NexGen Professional Solutions help forward-thinking businesses strategize, execute, and win - with precision at every step.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href='/services' className="btn-primary">
                     Explore Services
                   </Link>
-                  <Link href='/contact' className="btn-primary">
+                  <Link href='/contact' className="btn-outline">
                     Get In Touch
                   </Link>
                 </div>
