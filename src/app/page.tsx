@@ -114,7 +114,7 @@ export default function Home() {
                 key={service.title}
                 className="group bg-black-card border border-white10 p-8 flex flex-col gap-4 hover:border-gold40 transition-all duration-500"
               >
-                <span className="text-3xl">{service.icon}</span>
+                <span className="text-3xl text-ivory">{service.icon}</span>
                 <h3 className="font-display text-xl font-light text-ivory tracking-wide">
                   {service.title}
                 </h3>
