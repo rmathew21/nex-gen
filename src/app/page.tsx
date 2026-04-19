@@ -33,7 +33,7 @@ const stats = [
 
 const pillars = [
   {
-    icon: "♟",
+    icon: "♟︎",
     title: "Strategic Thinking",
     headline: "We think three moves ahead.",
     body: "Every recommendation we make is grounded in long-term positioning, not short-term fixes. We analyze the full board before we move.",
