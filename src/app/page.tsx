@@ -84,10 +84,10 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/services" className="btn-primary">
+            <Link href="/services" className="btn-primary w-fit">
               Explore Services
             </Link>
-            <Link href="/contact" className="btn-outline">
+            <Link href="/contact" className="btn-outline w-fit">
               Get In Touch
             </Link>
           </div>
@@ -141,7 +141,7 @@ export default function Home() {
       </section>
 
       {/* Why NexGen */}
-      <section className="relative py-24 chess-bg">
+      <section className="relative py-32 chess-bg">
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
