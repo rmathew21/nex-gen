@@ -3,28 +3,24 @@ import Link from "next/link";
 
 const services = [
   {
-    icon: "♟",
+    icon: "♟︎",
     title: "Business Strategy",
-    description:
-      "Precision planning and competitive analysis to position your business for long-term sucess.",
+    description: "Precision planning and competitive analysis to position your business for long-term success.",
   },
   {
-    icon: "♜",
+    icon: "♜︎",
     title: "Operations",
-    description:
-      "Streamline workflows, elimate inefficienes, and build systems that scale with your growth.",
+    description: "Streamline workflows, eliminate inefficiencies, and build systems that scale with your growth.",
   },
   {
-    icon: "♝",
+    icon: "♝︎",
     title: "Consulting",
-    description:
-      "Expert guidance tailored to your industry, helping you navigate complexity with confidence.",
+    description: "Expert guidance tailored to your industry, helping you navigate complexity with confidence.",
   },
   {
-    icon: "♛",
+    icon: "♛︎",
     title: "Executive Coaching",
-    description:
-      "Develop the leadership clarity and strategic mindset needed to move your organization forward.",
+    description: "Develop the leadership clarity and strategic mindset needed to move your organization forward.",
   },
 ];
 
