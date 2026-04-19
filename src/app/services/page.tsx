@@ -58,7 +58,7 @@ const services = [
 export default function Services() {
   return (
     <main>
-      // Hero section
+      {/* // Hero section */}
       <section className="relative py-24 chess bg">
         <div className="absolute inset-0 bg-black/85" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
@@ -124,7 +124,7 @@ export default function Services() {
                   index % 2 !== 0 ? "md:col-start-1 md:row-start-1" : ""
                 }`}
               >
-                <div className="absolute inset-0 bg-black/70" />
+                <div className="absolute inset-0 bg-black/30" />
                 <span className="relative z-10 text-8xl text-ivory/20">
                   {service.icon}
                 </span>
