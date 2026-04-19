@@ -62,7 +62,7 @@ export default function Home() {
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-32">
           <p className="label-caps text-gold mb-6 tracking-widest2">
-            ♟ Strategic Business Solutions
+            ♛ Strategic Business Solutions
           </p>
           <h1 className="heading-display text-5xl md:text-7xl text-ivory mb-6 max-w-4xl">
             Every Move
