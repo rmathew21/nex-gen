@@ -59,8 +59,8 @@ export default function Services() {
   return (
     <main>
       {/* // Hero section */}
-      <section className="relative py-24 chess bg">
-        <div className="absolute inset-0 bg-black/85" />
+      <section className="relative py-24 chess-bg">
+        <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
           <p className="label-caps text-gold mb-4">What We Offer</p>
           <h1 className="heading-display text-5xl md:text-6xl text-ivory mb-6">
@@ -125,7 +125,7 @@ export default function Services() {
                 }`}
               >
                 <div className="absolute inset-0 bg-black/30" />
-                <span className="relative z-10 text-8xl text-ivory/20">
+                <span className="relative z-10 text-8xl text-ivory/30">
                   {service.icon}
                 </span>
               </div>
