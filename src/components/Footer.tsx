@@ -49,13 +49,13 @@ export default function Footer() {
             >
               info@nexgenprosolutions.com
             </a>
-            <a
+            {/* <a
               href="tel:+17135550000"
               className="hover:text-gold transition-colors duration-300"
             >
               (713) 555-0000
-            </a>
-            <p>Houston, TX</p>
+            </a> */}
+            <p>Austin, TX</p>
           </div>
         </div>
       </div>

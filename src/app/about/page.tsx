@@ -25,13 +25,13 @@ const values = [
 
 const teams = [
   {
-    name: "TA",
-    role: "Co-Founder & CEO",
+    name: "Toby Abraham",
+    role: "Managing Partner",
     bio: "15+ years leading strategic transformations across finance, healthcare, and technology sectors.",
   },
   {
-    name: "JE",
-    role: "Co-Founder & Head of Operations",
+    name: "James Ellickal",
+    role: "Managing Partner",
     bio: "Former COO with a track record of building scalable systems for high-growth organizations.",
   },
 ];
