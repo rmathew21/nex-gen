@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Learn about NexGen Professional Solutions — our story, values, and the team behind the strategy.",
+};
 
 const values = [
   {
@@ -35,6 +42,7 @@ const teams = [
     bio: "Former COO with a track record of building scalable systems for high-growth organizations.",
   },
 ];
+
 
 export default function About() {
   return (

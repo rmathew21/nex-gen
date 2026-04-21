@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from 'next';
 
 const services = [
   {
@@ -51,6 +51,11 @@ const pillars = [
     body: "We measure our success by yours. Every engagement is built around your specific goals, challenges, and vision for the future.",
   },
 ];
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Nexgen Professional Solutions — strategic consulting, operations, and executive coaching for forward-thinking businesses in Austin, TX.',
+};
 
 export default function Home() {
   return (

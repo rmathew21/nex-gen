@@ -39,7 +39,7 @@ export default function Navbar() {
 
                 {/* Logo */}
                 <Link href='/' className="flex flex-col leading-none group">
-                    <span className="font-display text-2xl font-light tracking-widest text-ivory group-hover:text-gold transition-colors duration-300">
+                    <span className="font-display text-2xl font-semibold tracking-widest text-ivory group-hover:text-gold transition-colors duration-300">
                         NexGen
                     </span>
                     <span className="label-caps text-gold-dim tracking-widest2 text-[0.6rem]">

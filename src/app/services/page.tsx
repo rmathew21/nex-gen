@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Services",
+  description:
+    "Explore NexGen's services — business strategy, operations, consulting, and executive coaching tailored for growth.",
+};
 
 const services = [
   {
