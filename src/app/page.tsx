@@ -57,7 +57,7 @@ const pillars = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Home',
+  title: "Home",
   description: 'Nexgen Professional Solutions — strategic consulting, operations, and executive coaching for forward-thinking businesses in Austin, TX.',
 };
 
