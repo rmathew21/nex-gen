@@ -6,21 +6,25 @@ const services = [
     icon: "♟︎",
     title: "Business Strategy",
     description: "Precision planning and competitive analysis to position your business for long-term success.",
+    learnMoreLabel:'Learn more about Business Strategy',
   },
   {
     icon: "♜︎",
     title: "Operations",
     description: "Streamline workflows, eliminate inefficiencies, and build systems that scale with your growth.",
+    learnMoreLabel:'Learn more about Operations',
   },
   {
     icon: "♝︎",
     title: "Consulting",
     description: "Expert guidance tailored to your industry, helping you navigate complexity with confidence.",
+    learnMoreLabel:'Learn more about Consulting',
   },
   {
     icon: "♛︎",
     title: "Executive Coaching",
     description: "Develop the leadership clarity and strategic mindset needed to move your organization forward.",
+    learnMoreLabel:'Learn more about Executive Coaching',
   },
 ];
 
@@ -124,6 +128,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="/services"
+                  aria-label={service.learnMoreLabel}
                   className="label-caps text-gold-dim hover:text-gold transition-colors duration-300 mt-2"
                 >
                   Learn More →
