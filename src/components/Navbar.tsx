@@ -66,7 +66,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-10" aria-label="Primary navigation">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -115,7 +115,7 @@ export default function Navbar() {
           menuOpen ? "max-h-96 border-b border-white/10" : "max-h-0"
         }`}
       >
-        <nav className="bg-black/95 backdrop-blur-sm px-6 py-8 flex flex-col gap-6">
+        <nav className="bg-black/95 backdrop-blur-sm px-6 py-8 flex flex-col gap-6" aria-label="Mobile navigation">
           {links.map((link) => (
             <Link
               key={link.href}

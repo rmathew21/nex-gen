@@ -28,7 +28,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4">
           <p className="label-caps text-gold">Navigation</p>
-          <nav className="flex flex-col gap-3">
+          <nav className="flex flex-col gap-3" aria-label="Footer navigation">
             {links.map((link) => (
               <Link
                 key={link.href}
