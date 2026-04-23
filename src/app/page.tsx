@@ -171,7 +171,7 @@ export default function Home() {
             {pillars.map((pillar) => (
               <div key={pillar.title} className="flex flex-col gap-4">
                 <p className="label-caps text-gold">{pillar.icon} {pillar.title}</p>
-                <h3 className="font-display text-2xl font-light text-ivory">
+                <h3 className="font-display text-2xl font-light text-ivory min-h-16 md:min-h-20">
                   {pillar.headline}
                 </h3>
                 <p className="text-ivory-dim text-sm leading-relaxed">
