@@ -90,6 +90,8 @@ export default function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden flex flex-col gap-1.5 p-2 group"
           aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           <span
             className={`block h-px w-6 bg-ivory transition-all duration-300 ${
@@ -114,8 +116,9 @@ export default function Navbar() {
         className={`md:hidden transition-all duration-500 overflow-hidden ${
           menuOpen ? "max-h-96 border-b border-white/10" : "max-h-0"
         }`}
+        aria-hidden={!menuOpen}
       >
-        <nav className="bg-black/95 backdrop-blur-sm px-6 py-8 flex flex-col gap-6" aria-label="Mobile navigation">
+        <nav id="mobile-menu" className="bg-black/95 backdrop-blur-sm px-6 py-8 flex flex-col gap-6" aria-label="Mobile navigation">
           {links.map((link) => (
             <Link
               key={link.href}
