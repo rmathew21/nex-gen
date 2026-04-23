@@ -41,7 +41,7 @@ export default function ContactForm() {
   };
 
   return (
-    <main>
+    <>
       {/* Hero */}
       <section className="relative py-24 chess-bg">
         <div className="absolute inset-0 bg-black/70" />
@@ -236,6 +236,6 @@ export default function ContactForm() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }

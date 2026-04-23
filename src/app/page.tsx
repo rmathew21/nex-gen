@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center chess-bg">
         <div className="aboslute inset-0 bg-black/80" />
@@ -183,6 +183,6 @@ export default function Home() {
 
         </div>
       </section>
-    </main>
+    </>
   );
 }

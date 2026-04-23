@@ -46,7 +46,7 @@ const teams = [
 
 export default function About() {
   return (
-    <main>
+    <>
       {/* Hero */}
       <section className="relative py-24 chess-bg">
         <div className="absolute inset-0 bg-black/60" />
@@ -183,6 +183,6 @@ export default function About() {
             </div>
           </section>
         
-    </main>
+    </>
   );
 }

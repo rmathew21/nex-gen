@@ -64,7 +64,7 @@ const services = [
 
 export default function Services() {
   return (
-    <main>
+    <>
       {/* // Hero section */}
       <section className="relative py-24 chess-bg">
         <div className="absolute inset-0 bg-black/60" />
@@ -166,6 +166,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-    </main>
+    </>
   );
 }
