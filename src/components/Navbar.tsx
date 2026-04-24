@@ -53,7 +53,8 @@ export default function Navbar() {
             src="/crestLogo.svg"
             alt="NexGen logo"
             width={60}
-            height={60}
+            height={53}
+            className="w-12 h-auto"
           />
           <div className="flex flex-col leading-none -mt-2">
             <span className="font-display text-2xl font-semibold tracking-widest text-ivory group-hover:text-gold transition-colors duration-300">
