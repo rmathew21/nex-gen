@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import path from "path";
 import { useState, useEffect } from "react";
 
 const links = [
@@ -16,6 +15,12 @@ export default function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleLogoClick = () => {
+    if (pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -48,7 +53,7 @@ export default function Navbar() {
                     </span>
                 </Link> */}
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
+        <Link href="/" onClick={handleLogoClick} className="flex items-center gap-3 group">
           <Image
             src="/crestLogo.svg"
             alt="NexGen logo"
